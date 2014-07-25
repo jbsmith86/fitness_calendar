@@ -7,8 +7,11 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Event.create([
-{ name: 'Yoga', day: 'Sunday', start_time: '0900', end_time: '1000' },
-{ name: 'Running', day: 'Monday', start_time: '1100', end_time: '1230' },
+  { name: 'Yoga', day: 'Sunday', start_time: '0900', end_time: '1000' },
+  { name: 'Running', day: 'Monday', start_time: '1100', end_time: '1230' },
+  { name: 'Lift', day: 'Friday', start_time: '0800', end_time: '1400' },
+  { name: 'Rock Climb', day: 'Tuesday', start_time: '0500', end_time: '0930' }
+
 ])
 
 
