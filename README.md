@@ -1,6 +1,6 @@
 # Usage
 
-Event objects are located in seeds.rb folder in the db folder. They look like this:
+Event objects are located in seeds.rb file in the db folder. They look like this:
 
 ```
 { name: 'Kayaking', day: 'Saturday', start_time: '0700', end_time: '1400' }
