@@ -1,6 +1,16 @@
 
+td {
+  	height: 50px;
+  	vertical-alight: top;
+  	padding: 0px 0px 50px 0px;
+  }
+
 section {
   @include outer-container;
   text-align: center;
   margin-bottom: 3em;
+
+  .time-label {
+  	position: absolute;
+  }
 }

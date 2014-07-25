@@ -1,8 +1,9 @@
 <section class="calendar">
   <h1>Fitness Calendar</h1>
-  <table cellspacing="0" cellpadding="0">
+  <table cellspacing="0" cellpadding="0" border="0">
     <tbody>
       <tr>
+        <th></th>
         <th>Sunday</th>
         <th>Monday</th>
         <th>Tuesday</th>
@@ -11,15 +12,18 @@
         <th>Friday</th>
         <th>Saturday</th>
       </tr>
-      <tr>
-        <td>Division 1</td><td>Division 2</td><td>Division 3</td>
-      </tr>
-      <tr class="even">
-        <td>Division 1</td><td>Division 2</td><td>Division 3</td>
-      </tr>
-      <tr>
-        <td>Division 1</td><td>Division 2</td><td>Division 3</td>
-      </tr>
+      <% @times.each do |i| %>
+        <tr>
+          <td><div class="time-label"><%= i.time %></div></td>
+          <td id="sunday-<%=i.tr_label%>"></td>
+          <td id="monday-<%=i.tr_label%>"></td>
+          <td id="tuesday-<%=i.tr_label%>"></td>
+          <td id="wednesday-<%=i.tr_label%>"></td>
+          <td id="thursday-<%=i.tr_label%>"></td>
+          <td id="friday-<%=i.tr_label%>"></td>
+          <td id="saturday-<%=i.tr_label%>"></td>
+        </tr>
+      <% end %>
     </tbody>
   </table>
 </section>
