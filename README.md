@@ -1,4 +1,4 @@
-== Usage
+# Usage
 
 Event objects are located in seeds.rb folder in the db folder. They look like this:
 
